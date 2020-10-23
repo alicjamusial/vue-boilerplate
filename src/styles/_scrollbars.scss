@@ -1,0 +1,52 @@
+$scrollbar-background-color: #e6e6e6;
+$scrollbar-inside-color: #cdcdcd;
+$scrollbar-inside-hover-color: #b3b3b3;
+
+$dark-scrollbar-background-color: #202020;
+$dark-scrollbar-inside-color: #3e3e3e;
+$dark-scrollbar-inside-hover-color: #4b4b4b;
+
+// Scrollbars
+html {
+  scrollbar-color: $scrollbar-inside-color $scrollbar-background-color;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: $scrollbar-background-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $scrollbar-inside-color;
+  border: solid 2px $scrollbar-background-color;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $scrollbar-inside-hover-color;
+}
+
+.app-dark {
+  scrollbar-color: $dark-scrollbar-inside-color $dark-scrollbar-background-color;
+}
+
+.app-dark ::-webkit-scrollbar {
+  width: 15px;
+}
+
+.app-dark ::-webkit-scrollbar-track {
+  background: $dark-scrollbar-background-color;
+}
+
+.app-dark ::-webkit-scrollbar-thumb {
+  background: $dark-scrollbar-inside-color;
+  border: solid 2px $dark-scrollbar-background-color;
+  border-radius: 6px;
+}
+
+.app-dark ::-webkit-scrollbar-thumb:hover {
+  background: $dark-scrollbar-inside-hover-color;
+}
